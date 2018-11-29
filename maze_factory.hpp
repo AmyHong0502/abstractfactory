@@ -16,13 +16,13 @@
 // used to create the parts of a maze.
 class maze_factory {
 
-    virtual maze make_maze();
+    virtual maze make_maze() = 0;
 
-    virtual wall make_wall();
+    virtual wall make_wall() = 0;
 
-    virtual room make_room();
+    virtual room make_room() = 0;
 
-    virtual door make_door(room & r1, room & r2);
+    virtual door make_door(room &r1, room &r2) = 0;
 
 };
 
