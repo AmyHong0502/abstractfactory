@@ -5,7 +5,7 @@
 #ifndef ABSTRACTFACTORY_MAZE_GAME_HPP
 #define ABSTRACTFACTORY_MAZE_GAME_HPP
 
-#include "maze_factory.hpp"
+#include "interface/maze_factory.hpp"
 
 /**
  * Maze game.

@@ -5,7 +5,11 @@
 #ifndef ABSTRACTFACTORY_FUTURISTIC_DYSTOPIAN_MAZE_FACTORY_HPP
 #define ABSTRACTFACTORY_FUTURISTIC_DYSTOPIAN_MAZE_FACTORY_HPP
 
-#include "maze_factory.hpp"
+#include "../../interface/maze_factory.hpp"
+#include "futuristic_maze.hpp"
+#include "futuristic_wall.hpp"
+#include "futuristic_room.hpp"
+#include "futuristic_door.hpp"
 
 /**
  * Futuristic dystopian maze factory.

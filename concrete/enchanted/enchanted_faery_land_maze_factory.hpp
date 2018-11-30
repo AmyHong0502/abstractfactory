@@ -5,7 +5,11 @@
 #ifndef ABSTRACTFACTORY_ENCHANTED_FAERY_LAND_MAZE_FACTORY_HPP
 #define ABSTRACTFACTORY_ENCHANTED_FAERY_LAND_MAZE_FACTORY_HPP
 
-#include "maze_factory.hpp"
+#include "../../interface/maze_factory.hpp"
+#include "enchanted_maze.hpp"
+#include "enchanted_wall.hpp"
+#include "enchanted_room.hpp"
+#include "enchanted_door.hpp"
 
 /**
  * Enchanted faery land maze factory.

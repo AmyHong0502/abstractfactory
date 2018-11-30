@@ -1,7 +1,7 @@
 #include <iostream>
-#include "enchanted_faery_land_maze_factory.hpp"
+#include "concrete/enchanted/enchanted_faery_land_maze_factory.hpp"
 #include "maze_game.hpp"
-#include "futuristic_dystopian_maze_factory.hpp"
+#include "concrete/futuristic/futuristic_dystopian_maze_factory.hpp"
 
 int main() {
     enchanted_faery_land_maze_factory e_mf;

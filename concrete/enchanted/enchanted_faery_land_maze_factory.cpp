@@ -36,7 +36,7 @@ maze *enchanted_faery_land_maze_factory::make_maze() {
 }
 
 wall *enchanted_faery_land_maze_factory::make_wall() {
-    return new enchanted_wall();
+    return new enchanted_wall;
 }
 
 room *enchanted_faery_land_maze_factory::make_room() {
