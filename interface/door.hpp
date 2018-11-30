@@ -35,7 +35,7 @@ public:
      * Destructor of this door.
      */
     virtual ~door() = default;
-};
 
+};
 
 #endif //ABSTRACTFACTORY_DOOR_HPP

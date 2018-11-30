@@ -23,6 +23,7 @@ public:
      * Destructor of this wall.
      */
     virtual ~wall() = default;
+
 };
 
 #endif //ABSTRACTFACTORY_WALL_HPP

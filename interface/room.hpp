@@ -38,6 +38,7 @@ public:
      * Destructor of this room.
      */
     virtual ~room() = default;
+
 };
 
 #endif //ABSTRACTFACTORY_ROOM_HPP

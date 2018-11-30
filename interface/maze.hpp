@@ -5,7 +5,6 @@
 #ifndef ABSTRACTFACTORY_MAZE_HPP
 #define ABSTRACTFACTORY_MAZE_HPP
 
-#include <vector>
 #include "door.hpp"
 
 /**
@@ -30,7 +29,6 @@ public:
     /**
      * Destructor of this maze.
      */
-//    virtual ~maze() = 0;
     virtual ~maze() = default;
 
     /**
@@ -51,6 +49,7 @@ public:
      * Prints information about this maze.
      */
     virtual void print() = 0;
+
 };
 
 #endif //ABSTRACTFACTORY_MAZE_HPP
