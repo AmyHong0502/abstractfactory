@@ -5,8 +5,27 @@
 #include "futuristic_dystopian_maze_factory.hpp"
 
 maze *futuristic_dystopian_maze_factory::make_maze() {
+    wall *wall1 = make_wall();
+    wall *wall2 = make_wall();
+    wall *wall3 = make_wall();
+    wall *wall4 = make_wall();
+    wall *wall5 = make_wall();
+    wall *wall6 = make_wall();
+    wall *wall7 = make_wall();
+    wall *wall8 = make_wall();
+
     room *room1 = make_room();
     room *room2 = make_room();
+
+    room1->build_wall(wall1);
+    room1->build_wall(wall2);
+    room1->build_wall(wall3);
+    room1->build_wall(wall4);
+    room2->build_wall(wall5);
+    room2->build_wall(wall6);
+    room2->build_wall(wall7);
+    room2->build_wall(wall8);
+
     door *door = make_door(*room1, *room2);
 
     maze *m = new futuristic_maze();

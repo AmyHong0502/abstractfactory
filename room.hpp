@@ -15,16 +15,25 @@ protected:
 public:
     virtual void print() = 0;
 
-    virtual ~room() = default;
+    virtual void build_wall(wall *w) = 0;
+
+    virtual ~room() = 0;
 };
 
 class enchanted_room : virtual public room {
 public:
     enchanted_room() {
-        for (int i = 0; i < 4; i++) {
-            walls.push_back(new enchanted_wall);
-        }
         print();
+    }
+
+    ~enchanted_room() override {
+        for (wall *w: walls) {
+            delete w;
+        }
+    }
+
+    void build_wall(wall *w) override {
+        walls.push_back(w);
     }
 
     void print() override {
@@ -35,10 +44,17 @@ public:
 class futuristic_room : virtual public room {
 public:
     futuristic_room() {
-        for (int i = 0; i < 4; i++) {
-            walls.push_back(new futuristic_wall);
-        }
         print();
+    }
+
+    ~futuristic_room() override {
+        for (wall *w: walls) {
+            delete w;
+        }
+    }
+
+    void build_wall(wall *w) override {
+        walls.push_back(w);
     }
 
     void print() override {

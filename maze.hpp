@@ -15,6 +15,9 @@ protected:
     std::vector<door *> doors;
 
 public:
+
+    virtual ~maze() = 0;
+
     virtual void add_room(room *r) = 0;
 
     virtual void add_door(door *r) = 0;
@@ -26,6 +29,15 @@ class enchanted_maze : virtual public maze {
 public:
     enchanted_maze() {
         print();
+    }
+
+    ~enchanted_maze() override {
+        for (room *r: rooms) {
+            delete r;
+        }
+        for (door *d: doors) {
+            delete d;
+        }
     }
 
     void add_room(room *r) override {
@@ -45,6 +57,15 @@ class futuristic_maze : virtual public maze {
 public:
     futuristic_maze() {
         print();
+    }
+
+    ~futuristic_maze() override {
+        for (room *r: rooms) {
+            delete r;
+        }
+        for (door *d: doors) {
+            delete d;
+        }
     }
 
     void add_room(room *r) override {

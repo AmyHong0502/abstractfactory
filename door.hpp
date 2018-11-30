@@ -9,12 +9,12 @@
 
 class door {
 protected:
-    room *room1;
-    room *room2;
+    room *room1 = nullptr;
+    room *room2 = nullptr;
 
 public:
     virtual void print() = 0;
-    virtual ~door() = default;
+    virtual ~door() = 0;
 };
 
 class enchanted_door : virtual public door {

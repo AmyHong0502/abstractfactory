@@ -7,11 +7,6 @@
 
 #include "maze.hpp"
 
-// Class maze_factory is abstract.
-// It builds rooms, walls, and doors between rooms.
-//
-// A maze_factory can be instantiated and passed to some other module to be
-// used to create the parts of a maze.
 class maze_factory {
 
 public:
