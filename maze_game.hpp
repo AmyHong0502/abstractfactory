@@ -7,7 +7,12 @@
 
 #include "maze_factory.hpp"
 
+// NOT abstract.
 class maze_game {
+
+public:
+
+    maze_game();
 
     maze *create_maze(maze_factory &mf);
 
