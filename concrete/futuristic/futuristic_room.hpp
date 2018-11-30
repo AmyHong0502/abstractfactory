@@ -17,34 +17,24 @@ public:
     /**
      * Constructor of this futuristic room.
      */
-    futuristic_room() {
-        print();
-    }
+    futuristic_room();
 
     /**
      * Destructor of this futuristic room.
      */
-    ~futuristic_room() override {
-        for (wall *w: walls) {
-            delete w;
-        }
-    }
+    ~futuristic_room() override;
 
     /**
      * Builds a wall for this futuristic room.
      *
      * @param w wall to build
      */
-    void build_wall(wall *w) override {
-        walls.push_back(w);
-    }
+    void build_wall(wall *w) override;
 
     /**
      * Prints information of this futuristic room.
      */
-    void print() override {
-        std::cout << "futuristic room" << std::endl;
-    }
+    void print() override;
 };
 
 #endif //ABSTRACTFACTORY_FUTURISTIC_ROOM_HPP

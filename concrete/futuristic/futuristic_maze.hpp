@@ -17,47 +17,31 @@ public:
     /**
      * Constructor of this futuristic dystopian maze.
      */
-    futuristic_maze() {
-        print();
-    }
+    futuristic_maze();
 
     /**
      * Destructor of this futuristic dystopian maze.
      */
-    ~futuristic_maze() override {
-        for (room *r: rooms) {
-            delete r;
-        }
-        for (door *d: doors) {
-            delete d;
-        }
-    }
+    ~futuristic_maze() override;
 
     /**
      * Adds a room into this futuristic dystopian maze.
      *
      * @param r room to add.
      */
-    void add_room(room *r) override {
-        rooms.push_back(r);
-    }
+    void add_room(room *r) override;
 
     /**
      * Adds a door into this futuristic dystopian maze.
      *
      * @param r door to add.
      */
-    void add_door(door *d) override {
-        doors.push_back(d);
-    }
+    void add_door(door *d) override;
 
     /**
      * Prints information about this futuristic dystopian maze.
      */
-    void print() override {
-        std::cout << "futuristic maze" << std::endl;
-    }
+    void print() override;
 };
-
 
 #endif //ABSTRACTFACTORY_FUTURISTIC_MAZE_HPP

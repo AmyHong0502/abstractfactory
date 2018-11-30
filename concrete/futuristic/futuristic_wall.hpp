@@ -18,18 +18,12 @@ public:
     /**
      * Constructor of this futuristic wall.
      */
-    futuristic_wall() {
-        print();
-    }
-
-    ~futuristic_wall() override = default;
+    futuristic_wall();
 
     /**
      * Prints information of this futuristic wall.
      */
-    void print() override {
-        std::cout << "futuristic wall" << std::endl;
-    }
+    void print() override;
 };
 
 #endif //ABSTRACTFACTORY_FUTURISTIC_WALL_HPP

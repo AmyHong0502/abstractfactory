@@ -21,27 +21,17 @@ public:
      * @param r1 room to connect with this door.
      * @param r2 room to connect with this door.
      */
-    futuristic_door(room &r1, room &r2) {
-        room1 = &r1;
-        room2 = &r2;
-
-        print();
-    }
+    futuristic_door(room &r1, room &r2);
 
     /**
      * Destructor of this futuristic door.
      */
-    ~futuristic_door() override {
-        delete room1;
-        delete room2;
-    }
+    ~futuristic_door() override;
 
     /**
      * Prints information of this futuristic door.
      */
-    void print() override {
-        std::cout << "futuristic door" << std::endl;
-    }
+    void print() override;
 };
 
 #endif //ABSTRACTFACTORY_FUTURISTIC_DOOR_HPP

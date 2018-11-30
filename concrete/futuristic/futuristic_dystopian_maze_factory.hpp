@@ -48,5 +48,4 @@ public:
     door *make_door(room &r1, room &r2) override;
 };
 
-
 #endif //ABSTRACTFACTORY_FUTURISTIC_DYSTOPIAN_MAZE_FACTORY_HPP
