@@ -21,27 +21,18 @@ public:
      * @param r1 room to connect with this door.
      * @param r2 room to connect with this door.
      */
-    enchanted_door(room &r1, room &r2) {
-        room1 = &r1;
-        room2 = &r2;
-
-        print();
-    }
+    enchanted_door(room &r1, room &r2);
 
     /**
      * Destructor of this enchanted door.
      */
-    ~enchanted_door() override {
-        delete room1;
-        delete room2;
-    }
+    ~enchanted_door() override;
 
     /**
      * Prints information of this enchanted door.
      */
-    void print() override {
-        std::cout << "enchanted door" << std::endl;
-    }
+    void print() override;
+
 };
 
 #endif //ABSTRACTFACTORY_ENCHANTED_DOOR_HPP

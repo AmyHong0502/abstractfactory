@@ -3,3 +3,11 @@
 //
 
 #include "enchanted_wall.hpp"
+
+enchanted_wall::enchanted_wall() {
+    print();
+}
+
+void enchanted_wall::print() {
+    std::cout << "enchanted wall" << std::endl;
+}

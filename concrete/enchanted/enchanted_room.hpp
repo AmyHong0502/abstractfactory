@@ -12,39 +12,30 @@
  * Concrete implementation of class room.
  */
 class enchanted_room : virtual public room {
+
 public:
 
     /**
      * Constructor of this enchanted room.
      */
-    enchanted_room() {
-        print();
-    }
+    enchanted_room();
 
     /**
      * Destructor of this enchanted room.
      */
-    ~enchanted_room() override {
-        for (wall *w: walls) {
-            delete w;
-        }
-    }
+    ~enchanted_room() override;
 
     /**
      * Builds a wall for this enchanted room.
      *
      * @param w wall to build
      */
-    void build_wall(wall *w) override {
-        walls.push_back(w);
-    }
+    void build_wall(wall *w) override;
 
     /**
      * Prints information of this enchanted room.
      */
-    void print() override {
-        std::cout << "enchanted room" << std::endl;
-    }
+    void print() override;
 };
 
 #endif //ABSTRACTFACTORY_ENCHANTED_ROOM_HPP

@@ -18,46 +18,32 @@ public:
     /**
      * Constructor of this enchanted faery land maze.
      */
-    enchanted_maze() {
-        print();
-    }
+    enchanted_maze();
 
     /**
      * Destructor of this enchanted faery land maze.
      */
-    ~enchanted_maze() override {
-        for (room *r: rooms) {
-            delete r;
-        }
-        for (door *d: doors) {
-            delete d;
-        }
-    }
+    ~enchanted_maze() override;
 
     /**
      * Adds a room into this enchanted faery land maze.
      *
      * @param r room to add.
      */
-    void add_room(room *r) override {
-        rooms.push_back(r);
-    }
+    void add_room(room *r) override;
 
     /**
      * Adds a door into this enchanted faery land maze.
      *
      * @param r door to add.
      */
-    void add_door(door *d) override {
-        doors.push_back(d);
-    }
+    void add_door(door *d) override;
 
     /**
      * Prints information about this enchanted faery land maze.
      */
-    void print() override {
-        std::cout << "enchanted maze" << std::endl;
-    }
+    void print() override;
+
 };
 
 #endif //ABSTRACTFACTORY_ENCHANTED_MAZE_HPP

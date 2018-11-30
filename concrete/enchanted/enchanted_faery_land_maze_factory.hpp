@@ -46,6 +46,7 @@ public:
      * @return a pointer that points to an enchanted door.
      */
     door *make_door(room &r1, room &r2) override;
+
 };
 
 #endif //ABSTRACTFACTORY_ENCHANTED_FAERY_LAND_MAZE_FACTORY_HPP

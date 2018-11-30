@@ -18,16 +18,12 @@ public:
     /**
      * Constructor of this enchanted wall.
      */
-    enchanted_wall() {
-        print();
-    }
+    enchanted_wall();
 
     /**
      * Prints information of this enchanted wall.
      */
-    void print() override {
-        std::cout << "enchanted wall" << std::endl;
-    }
+    void print() override;
 };
 
 #endif //ABSTRACTFACTORY_ENCHANTED_WALL_HPP
