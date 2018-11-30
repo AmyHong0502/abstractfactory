@@ -21,6 +21,11 @@ public:
     futuristic_wall();
 
     /**
+     * Destructor of this futuristic wall.
+     */
+    ~futuristic_wall() override;
+
+    /**
      * Prints information of this futuristic wall.
      */
     void print() override;

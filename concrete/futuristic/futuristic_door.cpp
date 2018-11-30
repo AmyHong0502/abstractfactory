@@ -12,8 +12,7 @@ futuristic_door::futuristic_door(room &r1, room &r2) {
 }
 
 futuristic_door::~futuristic_door() {
-    delete room1;
-    delete room2;
+    std::cout << "D *** futuristic_door" << std::endl;
 }
 
 void futuristic_door::print() {

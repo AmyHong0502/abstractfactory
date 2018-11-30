@@ -11,3 +11,7 @@ enchanted_wall::enchanted_wall() {
 void enchanted_wall::print() {
     std::cout << "enchanted wall" << std::endl;
 }
+
+enchanted_wall::~enchanted_wall() {
+    std::cout << "D *** enchanted_wall" << std::endl;
+}

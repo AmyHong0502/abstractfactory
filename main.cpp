@@ -8,8 +8,11 @@ int main() {
 
     maze_game maze_game;
 
-    maze_game.create_maze(e_mf);
-    maze_game.create_maze(f_mf);
+    maze *em = maze_game.create_maze(e_mf);
+    maze *fm = maze_game.create_maze(f_mf);
+
+    delete fm;
+    delete em;
 
     return 0;
 }

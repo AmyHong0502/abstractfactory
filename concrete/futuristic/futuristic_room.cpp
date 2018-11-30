@@ -9,6 +9,7 @@ futuristic_room::futuristic_room() {
 }
 
 futuristic_room::~futuristic_room() {
+    std::cout << "D *** futuristic_room" << std::endl;
     for (wall *w: walls) {
         delete w;
     }

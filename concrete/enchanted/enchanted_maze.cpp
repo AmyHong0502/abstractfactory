@@ -9,6 +9,8 @@ enchanted_maze::enchanted_maze() {
 }
 
 enchanted_maze::~enchanted_maze() {
+    std::cout << "D *** enchanted_maze" << std::endl;
+
     for (room *r: rooms) {
         delete r;
     }

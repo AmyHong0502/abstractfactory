@@ -9,6 +9,7 @@ enchanted_room::enchanted_room() {
 }
 
 enchanted_room::~enchanted_room() {
+    std::cout << "D *** enchanted_room" << std::endl;
     for (wall *w: walls) {
         delete w;
     }

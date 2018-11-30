@@ -11,3 +11,7 @@ void futuristic_wall::print() {
 futuristic_wall::futuristic_wall() {
     print();
 }
+
+futuristic_wall::~futuristic_wall() {
+    std::cout << "D *** futuristic_wall" << std::endl;
+}

@@ -21,6 +21,11 @@ public:
     enchanted_wall();
 
     /**
+     * Destructor of this enchanted wall.
+     */
+    ~enchanted_wall() override;
+
+    /**
      * Prints information of this enchanted wall.
      */
     void print() override;

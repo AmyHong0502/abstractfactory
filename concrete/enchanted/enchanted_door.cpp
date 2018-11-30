@@ -12,8 +12,7 @@ enchanted_door::enchanted_door(room &r1, room &r2) {
 }
 
 enchanted_door::~enchanted_door() {
-    delete room1;
-    delete room2;
+    std::cout << "D *** enchanted_door" << std::endl;
 }
 
 void enchanted_door::print() {

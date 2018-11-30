@@ -9,6 +9,8 @@ futuristic_maze::futuristic_maze(){
 }
 
 futuristic_maze::~futuristic_maze() {
+    std::cout << "D *** futuristic_maze" << std::endl;
+
     for (room *r: rooms) {
         delete r;
     }
