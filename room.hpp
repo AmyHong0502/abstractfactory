@@ -32,4 +32,18 @@ public:
     }
 };
 
+class futuristic_room : virtual public room {
+public:
+    futuristic_room() {
+        for (int i = 0; i < 4; i++) {
+            walls.push_back(new futuristic_wall);
+        }
+        print();
+    }
+
+    void print() override {
+        std::cout << "futuristic room" << std::endl;
+    }
+};
+
 #endif //ABSTRACTFACTORY_ROOM_HPP

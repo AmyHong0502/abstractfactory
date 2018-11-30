@@ -41,4 +41,23 @@ public:
     }
 };
 
+class futuristic_maze : virtual public maze {
+public:
+    futuristic_maze() {
+        print();
+    }
+
+    void add_room(room *r) override {
+        rooms.push_back(r);
+    }
+
+    void add_door(door *d) override {
+        doors.push_back(d);
+    }
+
+    void print() override {
+        std::cout << "futuristic maze" << std::endl;
+    }
+};
+
 #endif //ABSTRACTFACTORY_MAZE_HPP

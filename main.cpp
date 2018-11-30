@@ -1,18 +1,16 @@
 #include <iostream>
 #include "enchanted_faery_land_maze_factory.hpp"
+#include "maze_game.hpp"
+#include "futuristic_dystopian_maze_factory.hpp"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    enchanted_faery_land_maze_factory e_mf;
+    futuristic_dystopian_maze_factory f_mf;
 
-    // TODO
+    maze_game maze_game;
 
-    // Create concrete implementations of
-    //   maze_factory, maze, room, wall, and door.
-
-    enchanted_faery_land_maze_factory e;
-
-    e.make_maze();
-
+    maze_game.create_maze(e_mf);
+    maze_game.create_maze(f_mf);
 
     return 0;
 }

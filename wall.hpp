@@ -17,12 +17,24 @@ public:
 class enchanted_wall : virtual public wall {
 
 public:
-    enchanted_wall () {
+    enchanted_wall() {
         print();
     }
 
     void print() override {
-        std::cout << "wall" << std::endl;
+        std::cout << "enchanted wall" << std::endl;
+    }
+};
+
+class futuristic_wall : virtual public wall {
+
+public:
+    futuristic_wall() {
+        print();
+    }
+
+    void print() override {
+        std::cout << "futuristic wall" << std::endl;
     }
 };
 

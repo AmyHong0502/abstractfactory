@@ -7,7 +7,6 @@
 
 #include "maze_factory.hpp"
 
-// NOT abstract.
 class maze_game {
 
 public:

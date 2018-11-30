@@ -3,11 +3,12 @@
 //
 
 #include "maze_game.hpp"
+#include "enchanted_faery_land_maze_factory.hpp"
 
-//maze *maze_game::create_maze(maze_factory &mf) {
-//
-//}
-//
-//maze_game::maze_game() {
-//
-//}
+maze_game::maze_game() {
+    std::cout << "*** Maze game ***" << std::endl;
+}
+
+maze *maze_game::create_maze(maze_factory &mf) {
+    return mf.make_maze();
+}
