@@ -7,12 +7,24 @@
 
 #include "maze_factory.hpp"
 
+/**
+ * Maze game.
+ */
 class maze_game {
 
 public:
 
+    /**
+     * Constructor of this maze game.
+     */
     maze_game();
 
+    /**
+     * Creates a maze.
+     *
+     * @param mf maze factory to be used
+     * @return maze
+     */
     maze *create_maze(maze_factory &mf);
 
 };

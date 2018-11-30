@@ -7,16 +7,40 @@
 
 #include "maze_factory.hpp"
 
+/**
+ * Futuristic dystopian maze factory.
+ * Concrete implementation of class maze_factory.
+ */
 class futuristic_dystopian_maze_factory : virtual public maze_factory {
 
 public:
 
+    /**
+     * Builds a futuristic dystopian maze.
+     *
+     * @return a pointer that points to a futuristic dystopian maze.
+     */
     maze *make_maze() override;
 
+    /**
+     * Builds a futuristic wall.
+     *
+     * @return a pointer that points to a futuristic wall.
+     */
     wall *make_wall() override;
 
+    /**
+     * Builds a futuristic room.
+     *
+     * @return a pointer that points to a futuristic room.
+     */
     room *make_room() override;
 
+    /**
+     * Builds a futuristic door.
+     *
+     * @return a pointer that points to a futuristic door.
+     */
     door *make_door(room &r1, room &r2) override;
 };
 
